@@ -133,20 +133,13 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo Pill
-                Container(
-                  width: 72,
-                  height: 72,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFF10B981).withOpacity(0.12),
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: const Color(0xFF10B981).withOpacity(0.25)),
-                  ),
-                  child: const Center(
-                    child: Text('💊', style: TextStyle(fontSize: 34)),
-                  ),
+                // App Logo
+                Image.asset(
+                  'assets/images/logo.png',
+                  width: 96,
+                  height: 96,
                 ),
-                const SizedBox(height: 18),
+                const SizedBox(height: 14),
 
                 Text(
                   'vi-token',

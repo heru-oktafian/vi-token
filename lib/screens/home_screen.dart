@@ -153,13 +153,10 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0,
         title: Row(
           children: [
-            Container(
-              padding: const EdgeInsets.all(6),
-              decoration: BoxDecoration(
-                color: const Color(0xFF10B981).withOpacity(0.15),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: const Text('💊', style: TextStyle(fontSize: 16)),
+            Image.asset(
+              'assets/images/logo.png',
+              width: 32,
+              height: 32,
             ),
             const SizedBox(width: 10),
             Text(
