@@ -12,8 +12,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final _usernameController = TextEditingController(text: 'admin');
-  final _passwordController = TextEditingController(text: 'admin123');
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
   final _authService = AuthService();
   final _storage = StorageService();
 
@@ -256,12 +256,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                   ),
-                ),
-
-                const SizedBox(height: 24),
-                Text(
-                  'Akun Default: admin / admin123',
-                  style: TextStyle(color: Colors.grey[600], fontSize: 11),
                 ),
               ],
             ),
